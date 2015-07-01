@@ -1,0 +1,314 @@
+@import "compass";
+@import "compass/reset";
+@import "compass/utilities/general/clearfix";
+
+$bg-color: #efefef;
+$text-color: #4f4f4f;
+$secondly-text-color: #d9dada;
+$highlight-text-color: #fff;
+$button-color: #6cdcac;
+$border-color: #bebebe;
+
+body {
+  font-family: "Open Sans", sans-serif;
+  text-align: center;
+  background-color: $bg-color;
+}
+
+.hero {
+  max-width: 100em;
+  min-height: 28em;
+  margin: 0 auto;
+  // Photo courtesy of Peter Spradbrow
+  // City of blinding lights - Circular Quay, Sydney NSW
+  // https://www.flickr.com/photos/peterspradbrow/14164470138/
+  background-image: url('/images/find-an-agent-hero.jpg');
+  background-size: cover;
+  color: $highlight-text-color;
+
+  header {
+    img {
+      height: 2em;
+      margin: 1em 2em;
+      float: left;
+    }
+
+    ul {
+      float: right;
+
+      li {
+        float: left;
+        margin: 1em 0.5em;
+        padding: 0.5em 1em;
+        border: 1px solid transparent;
+        border-radius: 2px;
+        &:last-child {
+          border: 1px solid $highlight-text-color;
+        }
+      }
+    }
+    @include clearfix;
+  }
+
+  h1 {
+    padding: 2em 0 0.5em 0;
+    font-size: 3em;
+  }
+
+  h2 {
+    font-size: 2em;
+    color: $secondly-text-color;
+  }
+}
+
+form {
+  padding: 2em 0 2em 0;
+
+  input {
+    padding: 1em;
+    border: 0;
+
+    &[type="text"] {
+      width: 18em;
+      background-color: $bg-color;
+      border-radius: 2px 0 0 2px;
+      opacity: 0.3;
+    }
+
+    &[type="submit"] {
+      width: 6em;
+      color: $highlight-text-color;
+      background-color: $button-color;
+      border-radius: 0 2px 2px 0;
+    }
+  }
+  ::-webkit-input-placeholder { /* WebKit browsers */
+      color: blue;
+  }
+  :-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+      color: blue;
+  }
+  ::-moz-placeholder { /* Mozilla Firefox 19+ */
+      color: blue;
+  }
+  :-ms-input-placeholder { /* Internet Explorer 10+ */
+      color: blue;
+  }
+}
+
+.numbers {
+  width: 80%;
+  margin: 0 auto;
+
+  ul {
+    position: relative;
+    top: -4em;
+    background-color: $bg-color;
+
+    li {
+      float: left;
+      width: 25%;
+      box-sizing: border-box;
+      border-top: 1px solid $secondly-text-color;
+      border-bottom: 1px solid $secondly-text-color;
+      border-left: 1px solid $secondly-text-color;
+
+      &:last-child {
+        border-right: 1px solid $secondly-text-color;
+      }
+
+      h2 {
+        font-size: 2em;
+        padding: 1em 0;
+      }
+
+      h3 {
+        padding: 0 0 2em 0;
+      }
+    }
+
+    @include clearfix;
+  }
+}
+
+.how-it-works {
+  h2 {
+    font-size: 2em;
+
+    &:after {
+      display: block;
+      content: "";
+      background-color: $border-color;
+      width: 2em;
+      height: 0.1em;
+      margin: 0.4em auto;
+    }
+  }
+  ul {
+    border-bottom: 1px solid $border-color;
+    li {
+      float: left;
+      width: 33.3333333%;
+
+      // &:before {
+      //   display: block;
+      //   content: "";
+      //   background: $border-color;
+      //   width: 100%;
+      //   height: 1px;
+      //   position: relative;
+      //   top: 4em;
+      //   left: 50%;
+      //   margin: 0 2em;
+      // }
+
+      // &:last-child:before {
+      //   display: none;
+      // }
+
+      .detail {
+        margin-bottom: 2em;
+        .number {
+          display: block;
+          margin: 1em auto 2em auto;
+          padding: 0.4em;
+          font-size: 2em;
+          color: $border-color;
+          border: 1px solid $border-color;
+          width: 1em;
+          height: 1em;
+          background-color: $bg-color;
+          @include border-radius(100%);
+        }
+
+        h3 {
+          font-size: 1.8em;
+          font-weight: bold;
+          margin: 1em 0;
+        }
+
+        p {
+          padding: 0 4em;
+          color: grey;
+          line-height: 1.4em;
+        }
+
+        .fa-newspaper-o {
+          color: #eca95a;
+        }
+        .fa-pencil {
+          color: #ac9cd2;
+        }
+        .fa-users {
+          color: #4d99cb;
+        }
+      }
+    }
+    @include clearfix;
+  }
+}
+
+.why-choose-us {
+  h2 {
+    margin: 2em auto;
+    font-size: 2em;
+
+    &:after {
+      display: block;
+      content: "";
+      background-color: $border-color;
+      width: 2em;
+      height: 0.1em;
+      margin: 0.4em auto;
+    }
+  }
+
+  .col-2 {
+    float: left;
+    width: 50%;
+  }
+
+  ul {
+    border-bottom: 1px solid $border-color;
+    li {
+      position: relative;
+      margin: 1em auto;
+      min-height: 10em;
+      i {
+        position: absolute;
+        left: 3em;
+      }
+      .desc {
+        padding: 0 6em 2em 10em;
+        text-align: left;
+        h3 {
+          font-size: 2em;
+        }
+        p {
+          margin-top: 0.5em;
+          color: grey;
+        }
+      }
+    }
+  }
+
+  .fa-check {
+    color: #69BD94;
+  }
+
+  .fa-refresh {
+    color: #EBA860;
+  }
+
+  .fa-bar-chart {
+    color: #F06E80;
+  }
+
+  .fa-tag {
+    color: #1FB5E8;
+  }
+
+  .fa-user {
+    color: #AE7CC2;
+  }
+
+  .fa-thumbs-up {
+    color: #EB7F5F;
+  }
+}
+
+footer {
+  margin: 1em auto;
+
+  nav {
+    ul {
+      padding-left: 4em;
+      li {
+        line-height: 4em;
+        float: left;
+        margin-left: 2em;
+
+        a {
+          text-decoration: none;
+          color: $text-color;
+        }
+      }
+    }
+  }
+
+  ul.sns-links {
+    padding-right: 4em;
+    float: right;
+    li {
+      float: left;
+      line-height: 4em;
+      padding-right: 2em;
+    }
+    .fa-facebook {
+      color: #3C5A9A;
+    }
+    .fa-twitter {
+      color: #1AB2E8;
+    }
+  }
+}
