@@ -8,3 +8,7 @@ end
 get "/agents" do
   slim :agents
 end
+
+get "/twitter" do
+  slim :twitter
+end

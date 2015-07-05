@@ -1,0 +1,156 @@
+@import "compass";
+@import "compass/reset";
+
+$bg-color: #F3F0EA;
+$tweet-bg-color: #FFFCF6;
+$twitter-color: #1AB2E8;
+
+body {
+  box-sizing: border-box;
+  background: $bg-color;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+aside {
+  padding: 0 1em;
+  .profile {
+    img.avatar {
+      margin: 2em auto 0.5em auto;
+      display: block;
+      width: 8em;
+      height: 8em;
+      @include border-radius(100%);
+    }
+    p {
+      margin: 1em 0;
+      text-align: center;
+      &.name {
+        padding: 0.5em;
+        font-weight: bold;
+      }
+    }
+    .button-secondary {
+      color: white;
+      background: rgb(66, 184, 221);
+      padding: 0.5em 2em;
+      @include border-radius(16px);
+    }
+  }
+
+  .who-to-follow {
+    h3 {
+      text-align: center;
+      font-size: 1.5em;
+    }
+    .user {
+      position: relative;
+      margin: 1em auto;
+      img {
+        width: 2em;
+        height: 2em;
+        @include border-radius(100%);
+        position: absolute;
+      }
+      p {
+        position: relative;
+        margin-left: 3em;
+        top: 0;
+        &.desc {
+          font-weight: lighter;
+          color: #aaa;
+        }
+      }
+    }
+  }
+}
+
+header.narbar {
+  padding: 0.5em;
+  line-height: 1.5em;
+  margin-bottom: 1em;
+  background-color: white;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+}
+
+section.main-content {
+  margin: 0 auto;
+  background: $tweet-bg-color;
+  .stats {
+    margin-bottom: 1em;
+    background-color: $tweet-bg-color;
+    text-align: center;
+    ul {
+      li {
+        padding: 1.5em 3em;
+
+        h4 {
+          color: gray;
+        }
+
+        p {
+          margin-top: 1em;
+          font-weight: bold;
+        }
+        border-bottom: 3px solid $bg-color;
+
+        &:hover {
+          border-bottom: 3px solid $twitter-color;
+        }
+      }
+    }
+    @include clearfix;
+  }
+  .posts {
+    text-align: left;
+    .tweet {
+      margin: 2em 1em;
+      position: relative;
+      img.avatar {
+        width: 3em;
+        height: 3em;
+        @include border-radius(100%);
+        position: absolute;
+      }
+
+      .content {
+        margin-left: 4em;
+        padding-bottom: 1em;
+
+        header {
+          margin-bottom: 1em;
+          span {
+            margin-right: 1em;
+            &.name {
+              font-weight: bold;
+            }
+            &.account {
+              font-weight: lighter;
+              color: gray;
+            }
+            &.time {
+              color: gray;
+              float: right;
+              margin-right: 0;
+            }
+          }
+        }
+
+        footer {
+          .options {
+            a {
+              color: gray;
+            }
+            li {
+              float: left;
+              margin: 0.5em 1em 0 0;
+            }
+            @include clearfix;
+          }
+        }
+      }
+    }
+  }
+}

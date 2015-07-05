@@ -1,0 +1,240 @@
+/* line 5, ../../../../.rbenv/versions/2.2.2/gemsets/web-design-demos/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../.rbenv/versions/2.2.2/gemsets/web-design-demos/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../.rbenv/versions/2.2.2/gemsets/web-design-demos/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../.rbenv/versions/2.2.2/gemsets/web-design-demos/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../.rbenv/versions/2.2.2/gemsets/web-design-demos/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../.rbenv/versions/2.2.2/gemsets/web-design-demos/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../.rbenv/versions/2.2.2/gemsets/web-design-demos/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../.rbenv/versions/2.2.2/gemsets/web-design-demos/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../.rbenv/versions/2.2.2/gemsets/web-design-demos/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+/* line 8, ../../sass/twitter.scss */
+body {
+  box-sizing: border-box;
+  background: #F3F0EA;
+}
+
+/* line 13, ../../sass/twitter.scss */
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+/* line 17, ../../sass/twitter.scss */
+aside {
+  padding: 0 1em;
+}
+/* line 20, ../../sass/twitter.scss */
+aside .profile img.avatar {
+  margin: 2em auto 0.5em auto;
+  display: block;
+  width: 8em;
+  height: 8em;
+  -moz-border-radius: 100%;
+  -webkit-border-radius: 100%;
+  border-radius: 100%;
+}
+/* line 27, ../../sass/twitter.scss */
+aside .profile p {
+  margin: 1em 0;
+  text-align: center;
+}
+/* line 30, ../../sass/twitter.scss */
+aside .profile p.name {
+  padding: 0.5em;
+  font-weight: bold;
+}
+/* line 35, ../../sass/twitter.scss */
+aside .profile .button-secondary {
+  color: white;
+  background: #42b8dd;
+  padding: 0.5em 2em;
+  -moz-border-radius: 16px;
+  -webkit-border-radius: 16px;
+  border-radius: 16px;
+}
+/* line 44, ../../sass/twitter.scss */
+aside .who-to-follow h3 {
+  text-align: center;
+  font-size: 1.5em;
+}
+/* line 48, ../../sass/twitter.scss */
+aside .who-to-follow .user {
+  position: relative;
+  margin: 1em auto;
+}
+/* line 51, ../../sass/twitter.scss */
+aside .who-to-follow .user img {
+  width: 2em;
+  height: 2em;
+  -moz-border-radius: 100%;
+  -webkit-border-radius: 100%;
+  border-radius: 100%;
+  position: absolute;
+}
+/* line 57, ../../sass/twitter.scss */
+aside .who-to-follow .user p {
+  position: relative;
+  margin-left: 3em;
+  top: 0;
+}
+/* line 61, ../../sass/twitter.scss */
+aside .who-to-follow .user p.desc {
+  font-weight: lighter;
+  color: #aaa;
+}
+
+/* line 70, ../../sass/twitter.scss */
+header.narbar {
+  padding: 0.5em;
+  line-height: 1.5em;
+  margin-bottom: 1em;
+  background-color: white;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+}
+
+/* line 78, ../../sass/twitter.scss */
+section.main-content {
+  margin: 0 auto;
+  background: #FFFCF6;
+}
+/* line 81, ../../sass/twitter.scss */
+section.main-content .stats {
+  margin-bottom: 1em;
+  background-color: #FFFCF6;
+  text-align: center;
+  overflow: hidden;
+  *zoom: 1;
+}
+/* line 86, ../../sass/twitter.scss */
+section.main-content .stats ul li {
+  padding: 1.5em 3em;
+  border-bottom: 3px solid #F3F0EA;
+}
+/* line 89, ../../sass/twitter.scss */
+section.main-content .stats ul li h4 {
+  color: gray;
+}
+/* line 93, ../../sass/twitter.scss */
+section.main-content .stats ul li p {
+  margin-top: 1em;
+  font-weight: bold;
+}
+/* line 99, ../../sass/twitter.scss */
+section.main-content .stats ul li:hover {
+  border-bottom: 3px solid #1AB2E8;
+}
+/* line 106, ../../sass/twitter.scss */
+section.main-content .posts {
+  text-align: left;
+}
+/* line 108, ../../sass/twitter.scss */
+section.main-content .posts .tweet {
+  margin: 2em 1em;
+  position: relative;
+}
+/* line 111, ../../sass/twitter.scss */
+section.main-content .posts .tweet img.avatar {
+  width: 3em;
+  height: 3em;
+  -moz-border-radius: 100%;
+  -webkit-border-radius: 100%;
+  border-radius: 100%;
+  position: absolute;
+}
+/* line 118, ../../sass/twitter.scss */
+section.main-content .posts .tweet .content {
+  margin-left: 4em;
+  padding-bottom: 1em;
+}
+/* line 122, ../../sass/twitter.scss */
+section.main-content .posts .tweet .content header {
+  margin-bottom: 1em;
+}
+/* line 124, ../../sass/twitter.scss */
+section.main-content .posts .tweet .content header span {
+  margin-right: 1em;
+}
+/* line 126, ../../sass/twitter.scss */
+section.main-content .posts .tweet .content header span.name {
+  font-weight: bold;
+}
+/* line 129, ../../sass/twitter.scss */
+section.main-content .posts .tweet .content header span.account {
+  font-weight: lighter;
+  color: gray;
+}
+/* line 133, ../../sass/twitter.scss */
+section.main-content .posts .tweet .content header span.time {
+  color: gray;
+  float: right;
+  margin-right: 0;
+}
+/* line 142, ../../sass/twitter.scss */
+section.main-content .posts .tweet .content footer .options {
+  overflow: hidden;
+  *zoom: 1;
+}
+/* line 143, ../../sass/twitter.scss */
+section.main-content .posts .tweet .content footer .options a {
+  color: gray;
+}
+/* line 146, ../../sass/twitter.scss */
+section.main-content .posts .tweet .content footer .options li {
+  float: left;
+  margin: 0.5em 1em 0 0;
+}
